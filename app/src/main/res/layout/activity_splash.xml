@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.SplashActivity"
-    android:layoutDirection="locale" >
+    android:layoutDirection="locale"
+    android:background="@color/colorPrimary" >
 
-    <android.support.design.widget.AppBarLayout
+<!--    <android.support.design.widget.AppBarLayout
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +25,7 @@
             app:subtitleTextColor="@color/black_font"
             android:titleTextAppearance = "@color/black_font" />
 
-    </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.AppBarLayout>-->
 
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -40,20 +41,20 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/container_all"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_container" >
+            android:layout_height="match_parent" >
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/circleImageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
+        android:scaleType="centerCrop"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="70dp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/app_logo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -65,12 +66,39 @@
         app:layout_constraintTop_toBottomOf="@+id/circleImageView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:text="@string/app_name"
         android:textSize="40sp"
-        android:fontFamily="@font/din_next_lt_arabic_bold"
-        android:textColor="@color/colorPulopal" />
+        android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_app_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_app_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_gravity="center"
+                android:text="@string/app_short_description"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/sportsImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/general_sport_authority"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_app_description"
+                app:layout_constraintBottom_toTopOf="@id/progressBar" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -86,13 +114,14 @@
         app:layout_constraintBottom_toTopOf="@+id/refreshBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+        app:layout_constraintTop_toBottomOf="@+id/sportsImageView" />
 
             <TextView
                 android:id="@+id/pls_wait_txt_v"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
+                android:textColor="@color/white"
                 android:text="@string/dialogMessage"
                 app:layout_constraintBottom_toTopOf="@+id/refreshBtn"
                 app:layout_constraintEnd_toEndOf="parent"

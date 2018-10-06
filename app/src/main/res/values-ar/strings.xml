@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">رياضي</string>
-
+    <string name="app_short_description">منصة الرياضات المختلفة</string>
     <string name="navigation_drawer_open">افتح شريط التنقل</string>
     <string name="navigation_drawer_close">أغلق شريط التنقل</string>
     <string name="nav_header_title">الحساب الشخصي</string>
@@ -17,6 +17,7 @@
     <string name="action_sign_in_short">تسجيل دخول</string>
     <string name="action_sign_up">تسجيل جديد</string>
     <string name="action_register">تسجيل</string>
+    <string name="action_new_register">مستخدم جديد</string>
     <string name="error_invalid_email">عنوان البريد الإلكتروني هذا أو الإسم المختصر غير صحيح</string>
     <string name="error_invalid_password">كلمة المرور هذه قصيرة جدًا</string>
     <string name="error_incorrect_password">كلمة المرور هذه غير صحيحة</string>
@@ -158,6 +159,8 @@
 ٢- الدخول للجيم يتم في أوقات دوامه الرسمية. * \n
 
 \n * يجب التأكد ان الفتره التي تريد الدخول فيها لا تكون في إجازات رسمية مثل فترة العيد.</string>
+    <string name="ball">الكره</string>
+    <string name="water_ball">المائية</string>
 
 
 </resources>

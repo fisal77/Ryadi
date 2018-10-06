@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/a_jannat_lt_bold"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/padding_10"
+        android:text="@string/choose_lang"
+        android:textSize="@dimen/font_18"/>
+
+    <RadioGroup
+        android:id="@+id/language_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rg_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/a_jannat_lt_regular"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/padding_10"
+            android:text="English"/>
+
+        <RadioButton
+            android:id="@+id/rg_arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/a_jannat_lt_regular"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/padding_10"
+            android:text="العربية"/>
+    </RadioGroup>
+</LinearLayout>

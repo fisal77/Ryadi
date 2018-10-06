@@ -17,8 +17,7 @@ import android.widget.Toast;
 import com.appz_world_hackathon.ryadi.AppUtil.mApp.AppSharedPreferences;
 import com.appz_world_hackathon.ryadi.AppUtil.mApp.Session;
 import com.appz_world_hackathon.ryadi.R;
-import com.fisal.coach.AppUtil.mApp.AppSharedPreferences;
-import com.fisal.coach.AppUtil.mApp.Session;
+
 
 import java.util.Locale;
 
@@ -61,11 +60,11 @@ public class SplashActivity extends AppCompatActivity implements SwipeRefreshLay
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+/*        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.BLACK);
-        toolbar.setSubtitleTextColor(Color.BLACK);
+        toolbar.setSubtitleTextColor(Color.BLACK);*/
 
         session = new Session(this);
         appSharedPreferences = new AppSharedPreferences(this);
