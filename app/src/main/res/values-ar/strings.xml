@@ -161,6 +161,10 @@
 \n * يجب التأكد ان الفتره التي تريد الدخول فيها لا تكون في إجازات رسمية مثل فترة العيد.</string>
     <string name="ball">الكره</string>
     <string name="water_ball">المائية</string>
+    <string name="power">القوة</string>
+    <string name="brainstorm">الذهنية</string>
+    <string name="race">السباقات</string>
+    <string name="bolling_club">نادي البولينغ</string>
 
 
 </resources>

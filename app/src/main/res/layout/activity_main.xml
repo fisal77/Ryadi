@@ -22,8 +22,8 @@
         android:paddingBottom="40dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp" >
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" >
 
         <Button
             android:id="@+id/ball_btn"
@@ -35,23 +35,24 @@
             android:text="@string/ball"
             android:textColor="@color/white"
             android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/water_ball_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/water_ball_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_bg_rounded_corners"
-            android:text="@string/water_ball"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toStartOf="@+id/ball_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/water_ball_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="@string/water_ball"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/ball_btn"
+        app:layout_constraintStart_toEndOf="@+id/power_btn"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/power_btn"
@@ -61,12 +62,189 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_bg_rounded_corners"
-            android:text="@string/water_ball"
+            android:text="@string/power"
             android:textColor="@color/white"
             android:textSize="15sp"
-            app:layout_constraintEnd_toStartOf="@+id/ball_btn"
+            app:layout_constraintEnd_toStartOf="@+id/water_ball_btn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/brainstorm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:text="@string/brainstorm"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/race_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ball_btn" />
+
+        <Button
+            android:id="@+id/race_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:text="@string/race"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/brainstorm_btn"
+            app:layout_constraintStart_toEndOf="@+id/skill_btn"
+            app:layout_constraintTop_toBottomOf="@+id/water_ball_btn" />
+
+        <Button
+            android:id="@+id/skill_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:text="@string/power"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/race_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/power_btn" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/sports_game_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/race_btn">
+
+            <ImageView
+                android:id="@+id/ball_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/asset_2"
+                android:text="@string/ball"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/water_ball_image_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/water_ball_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_3"
+                android:text="@string/water_ball"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/ball_image_btn"
+                app:layout_constraintStart_toEndOf="@+id/power_image_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/power_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_4"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/water_ball_image_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/brainstorm_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/asset_5"
+                android:text="@string/brainstorm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/race_image_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ball_image_btn" />
+
+            <ImageView
+                android:id="@+id/race_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_6"
+                android:text="@string/race"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/brainstorm_image_btn"
+                app:layout_constraintStart_toEndOf="@+id/skill_image_btn"
+                app:layout_constraintTop_toBottomOf="@+id/water_ball_image_btn" />
+
+            <ImageView
+                android:id="@+id/skill_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_7"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/race_image_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/power_image_btn" />
+
+            <ImageView
+                android:id="@+id/image_btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/asset_8"
+                android:text="@string/brainstorm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/image_btn_9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brainstorm_image_btn" />
+
+            <ImageView
+                android:id="@+id/image_btn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_9"
+                android:text="@string/race"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/image_btn_8"
+                app:layout_constraintStart_toEndOf="@+id/image_btn_10"
+                app:layout_constraintTop_toBottomOf="@+id/race_image_btn" />
+
+
+            <ImageView
+                android:id="@+id/image_btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="10dp"
+                android:src="@drawable/asset_10"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@+id/race_image_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skill_image_btn" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
 
     </android.support.constraint.ConstraintLayout>
 

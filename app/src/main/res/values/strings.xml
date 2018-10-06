@@ -182,6 +182,10 @@
     <string name="title_activity_maps">Map</string>
     <string name="ball">Ball</string>
     <string name="water_ball">Water ball</string>
+    <string name="power">Power</string>
+    <string name="brainstorm">Brainstorm</string>
+    <string name="race">Race</string>
+    <string name="bolling_club">Bolling club</string>
 
 
 </resources>
