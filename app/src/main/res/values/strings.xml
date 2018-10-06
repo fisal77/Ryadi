@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Ryadi</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">P</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_nick_name">Nick Name</string>
+    <string name="prompt_email_or_nickname">Email / Nickname</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Re-enter password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_register">Register</string>
+    <string name="error_invalid_email">This email address or nickname is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="toastNoInternet">Something wrong or no internet connection. Please try refresh again by swiping down or resubmit again</string>
+    <string name="register_a_new_account">New user? Create an account to get started today.</string>
+    <string name="forget_sign_in_info">Did you forget your sign in info?</string>
+    <string name="registered_account">Have an account? Sign in now.</string>
+    <string name="error_not_match_password">Password does not match in both password fields</string>
+    <string name="error_duplicate_nickname">Your nickname belong to other user. Select other nickname</string>
+    <string name="error_profile_exists">User profile already exists. Please login</string>
+    <string name="action_sign_logout">Logout</string>
+    <string name="menu_main">Main page</string>
+    <string name="menu_profile">My profile</string>
+    <string name="menu_balance">My balance</string>
+    <string name="menu_booking">My booking</string>
+    <string name="menu_diagnosis">my diagnosis</string>
+    <string name="menu_plan">My plan</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_f_name">First Name</string>
+    <string name="prompt_l_name">Last Name</string>
+    <string name="prompt_mobile">Mobile no.</string>
+    <string name="prompt_dob">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender:</string>
+    <string name="prompt_educational_level">Educational level</string>
+    <string name="prompt_qualification">Qualification</string>
+    <string name="prompt_case_type">Case type</string>
+    <string name="prompt_case_description">Case description</string>
+    <string name="action_submit">Submit</string>
+    <string name="edit_your_credentials">Edit your credentials (Username/Password)? Click here!</string>
+    <string name="attach_file">Attach file</string>
+    <string name="special_case">Special case ?</string>
+    <string name="your_photo">Your photo</string>
+    <string name="edit">Edit</string>
+    <string name="read">Read</string>
+    <string name="togglebutton">Read/Edit</string>
+    <string name="profile_modified_successfully">Your profile has been modified successfully</string>
+    <string name="chooseYourImage">Choose your image</string>
+    <string name="selectCamera">Camera</string>
+    <string name="selectGallery">Gallery</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="download_attached_file">Download your attached file</string>
+    <string name="please_attach_file">Please attach the file</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="file_Uploaded_Successfully">File Uploaded Successfully…</string>
+    <string name="some_error_occurred">Some error occurred…Please try refresh again by swiping down or resubmit again.</string>
+    <string name="dialogMessage">Please wait …</string>
+    <string name="search">Search</string>
+    <string name="booking_now">Booking now!</string>
+    <string name="booking_gym_dialog_msg">Do you want to book this gym?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="booking_successfully">Booking has created successfully</string>
+    <string name="booked_for">Booked for:</string>
+    <string name="sent_confirmation_emil">(We\'ve sent you a confirmation email)</string>
+    <string name="gym_address">GYM address</string>
+    <string name="gym_name">GYM name</string>
+    <string name="gym_period">monday 16 April 2022</string>
+    <string name="email_sample">someone@some.com</string>
+    <string name="select_booking_date">Booking date </string>
+    <string name="or">or</string>
+    <string name="ad">AD</string>
+    <string name="hijri">Hijri</string>
+    <string name="and">and</string>
+    <string name="time">time</string>
+    <string name="date_msg">You picked the following date:</string>
+    <string name="time_msg">You picked the following time:</string>
+    <string name="share">Share</string>
+    <string name="menu_gym_list">GYM list</string>
+    <string name="gym_list_title">Select the gym you want to try</string>
+    <string name="city">City</string>
+    <string name="error_date_time">Select your booking date and/or time</string>
+    <string name="change_language">Change language</string>
+    <string name="change_theme">Change theme</string>
+    <string name="logout_message">Are you sure you want to Logout?</string>
+    <string name="choose_theme">Choose theme</string>
+    <string name="theme_1">Theme 1</string>
+    <string name="theme_2">Theme 2</string>
+    <string name="choose_lang">Choose language</string>
+    <string name="language">Language</string>
+    <string name="email_confirm_successfully">Email confirmation has sent successfully</string>
+    <string name="ok">OK</string>
+    <string name="complete_profile_message">Please complete your profile to get started booking the Gym</string>
+    <string name="gym_booking_id">Booking ID:</string>
+    <string name="booking_date">Booking date:</string>
+    <string name="cancel_booking">Cancel booking</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="canceled">Canceled/Ended</string>
+    <string name="booking_canceled_successfully">Your Gym booking has been canceled successfully</string>
+    <string name="cancel_booking_message">Are you sure want to cancel this booking?</string>
+    <string name="my_booked_gym">My booked Gym</string>
+    <string name="edit_profile_title">Edit your profile</string>
+    <string name="gym_details_title">Gym details</string>
+    <string name="gym_booking_confirm">Gym booking confirmation</string>
+
+
+    <string name="array_case_type_entry1">walking</string>
+    <string name="array_case_type_entry2">body building</string>
+    <string name="array_case_type_entry3">yoga</string>
+    <string name="array_case_type_entry4">swimming</string>
+    <string name="array_case_type_entry5">jacuzzis</string>
+    <string name="array_case_type_entry6">saunas</string>
+    <string name="array_case_type_entry7">general fitness</string>
+    <string name="array_case_type_entry8">other</string>
+    <string name="phone_call_permission_granted">PHONE CALL permission granted</string>
+    <string name="phone_call_permission_denied">PHONE CALL permission denied</string>
+    <string name="date_type_message">Please select the date type</string>
+    <string name="islamic_hijri">Islamic Hijri</string>
+    <string name="gregorian_ad">Gregorian AD</string>
+    <string name="prompt_new_email">New email</string>
+    <string name="prompt_new_nick_name">New nickname</string>
+    <string name="prompt_new_password">New password</string>
+    <string name="prompt_confirm_new_password">Confirm new password</string>
+    <string name="action_change">Apply Changes</string>
+    <string name="Keep_current_field">* Keep the current field</string>
+    <string name="change_successfully_applied">Change successfully applied. Please login.</string>
+    <string name="gyms">GYMs</string>
+    <string name="events">Events</string>
+    <string name="refresh">refresh</string>
+    <string name="event_details_title">Event details</string>
+    <string name="starting_from_price">Starting from 25 SR…</string>
+    <string name="hint_booking_days">Booking days</string>
+    <string name="price">Price</string>
+    <string name="sa_currency">S.R.</string>
+    <string name="price_sample">Price: 25 S.R.</string>
+    <string name="user_account_disabled_msg">Your account has been disabled. please call us for more details.</string>
+    <string name="no_user_account_exist">Failed no login data exists! Please signup now.</string>
+    <string name="edit_credentials_title">Edit login data</string>
+    <string name="error_incorrect_login_account">This username / password is incorrect</string>
+    <string name="choose_how_long">Choose how long you want to try the gym</string>
+
+    <string-array name="array_case_type">
+        <item>@string/prompt_case_type</item>
+        <item>@string/array_case_type_entry1</item>
+        <item>@string/array_case_type_entry2</item>
+        <item>@string/array_case_type_entry3</item>
+        <item>@string/array_case_type_entry4</item>
+        <item>@string/array_case_type_entry5</item>
+        <item>@string/array_case_type_entry6</item>
+        <item>@string/array_case_type_entry7</item>
+        <item>@string/array_case_type_entry8</item>
+    </string-array>
+
+
+    <string name="booking_conditions">Conditions: \n
+1- Booking is available for one month from the date of booking. \n
+2- Entry to the gym is in the official time. * \n
+
+\n * Be sure that the period you want to enter is not on official holidays such as the holiday period.</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
